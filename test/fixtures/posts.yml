@@ -3,13 +3,13 @@
 one:
   body: Hello there!
   message_id: MyString
-  author_type: contact
-  author: one
+  author_type: Contact
+  author: anton
   conversation: one
 
 two:
   body: Oh, hi!
   message_id: MyString
-  author_type: contact
-  author: one
+  author_type: User
+  author: support
   conversation: one

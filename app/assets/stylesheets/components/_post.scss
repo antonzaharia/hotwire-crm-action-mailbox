@@ -1,0 +1,16 @@
+.post {
+  width: 100%;
+  padding: var(--space-l);
+  margin: var(--space-s);
+  border: var(--border);
+  min-width: 300px;
+
+  &__body {
+    margin-bottom: var(--space-xl);
+  }
+  &__author {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-muted);
+    text-align: right;
+  }
+}

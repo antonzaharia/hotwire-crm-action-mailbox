@@ -1,1 +1,5 @@
-<%= post.body %>
+<div class="post">
+  <p class="post__body"><%= post.body %></p>
+  <% puts post %>
+  <p class="post__author"><%= post.author.name %> (<%= post.author.email %>)</p>
+</div>
