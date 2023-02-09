@@ -1,0 +1,6 @@
+<%= turbo_frame_tag @post do %>
+  <%= render "posts/form",
+             contact: @conversation.contact,
+             conversation: @conversation,
+             post: @post %>
+<% end %>

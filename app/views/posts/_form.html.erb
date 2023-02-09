@@ -1,0 +1,9 @@
+<%= simple_form_for [contact, conversation, post], html: { class: "form" } do |f| %>
+  <%= form_error_notification(post) %>
+
+  <div>
+    <%= f.rich_text_area :body, nput_html: { autofocus: true } %>
+  </div>
+
+  <%= f.submit class: "btn btn--secondary" %>
+<% end %>

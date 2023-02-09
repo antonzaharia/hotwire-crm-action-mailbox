@@ -7,6 +7,7 @@ class ConversationsController < ApplicationController
 
   def show
     @conversation = @contact.conversations.find(params[:id])
+    @post = Post.new
   end
 
   private

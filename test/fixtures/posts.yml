@@ -13,3 +13,17 @@ two:
   author_type: User
   author: support
   conversation: one
+
+three:
+  body: Hello there!
+  message_id: MyString
+  author_type: Contact
+  author: joe
+  conversation: two
+
+four:
+  body: Oh, hi!
+  message_id: MyString
+  author_type: User
+  author: support
+  conversation: two

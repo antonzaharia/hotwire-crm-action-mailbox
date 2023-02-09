@@ -1,1 +1,7 @@
-<%= render conversation.posts %>
+<%= turbo_stream_from conversation %>
+
+<div id="posts">
+  <%= render conversation.posts %>
+</div>
+
+<%= turbo_frame_tag 'new_post', src: new_contact_conversation_post_path(conversation.contact, conversation, Post.new) %>

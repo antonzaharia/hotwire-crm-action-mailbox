@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  resources :contacts, only: [:index] do
-    resources :conversations
+  resources :contacts do
+    resources :conversations do
+      resources :posts
+    end
   end
 end
