@@ -4,8 +4,10 @@
   "dependencies": {
     "@hotwired/stimulus": "^3.2.1",
     "@hotwired/turbo-rails": "^7.2.5",
+    "@rails/actiontext": "^7.0.4-2",
     "esbuild": "^0.17.6",
-    "sass": "^1.58.0"
+    "sass": "^1.58.0",
+    "trix": "^2.0.4"
   },
   "scripts": {
     "build": "esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds --public-path=assets",
