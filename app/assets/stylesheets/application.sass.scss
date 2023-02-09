@@ -11,7 +11,7 @@
 @import 'components/error_message';
 @import 'components/form';
 @import 'components/visually_hidden';
-@import 'components/quote';
+@import 'components/conversation';
 @import 'components/turbo_progress_bar';
 @import 'components/navbar';
 @import 'components/flash';
@@ -20,10 +20,12 @@
 @import 'components/line_item';
 @import 'components/quote_total';
 @import 'components/note';
+@import 'components/left_sidebar';
 
 // Layouts
 @import 'layouts/container';
 @import 'layouts/header';
+@import 'layouts/rows';
 
 // Utilities
 @import 'utilities/margins';

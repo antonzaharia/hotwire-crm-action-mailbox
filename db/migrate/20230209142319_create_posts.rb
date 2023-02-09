@@ -4,6 +4,7 @@ class CreatePosts < ActiveRecord::Migration[7.0]
       t.text :body, null: false
       t.string :message_id, null: false
       t.references :author, null: false, polymorphic: true
+      t.references :conversation, foreign_key: true, null: false
 
       t.timestamps
     end

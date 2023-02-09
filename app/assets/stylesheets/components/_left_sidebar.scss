@@ -1,0 +1,9 @@
+.left-sidebar {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-s);
+  border-right: var(--border);
+  min-height: 100vh;
+  overflow-y: auto;
+  gap: var(--space-xs);
+}

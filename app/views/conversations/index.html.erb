@@ -1,0 +1,12 @@
+<div class="rows">
+  <div class="left-sidebar">
+    <% @conversations.each do |conversation| %>
+      <div class="conversation">
+        <%= link_to "Conversation #{conversation.id}", [@contact, conversation], data: { turbo_frame: 'conversation_show' } %>
+      </div>
+    <% end %>
+  </div>
+  <div>
+    <%= turbo_frame_tag 'conversation_show' %>
+  </div>
+</div>
