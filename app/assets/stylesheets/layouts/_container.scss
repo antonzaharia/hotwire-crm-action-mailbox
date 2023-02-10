@@ -14,6 +14,10 @@
     align-items: center;
   }
 
+  &__with-padding {
+    padding: var(--space-xxl);
+  }
+
   @include media(tabletAndUp) {
     padding-right: var(--space-m);
     padding-left: var(--space-m);

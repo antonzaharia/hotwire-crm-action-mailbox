@@ -1,11 +1,17 @@
 require "test_helper"
 
 class ReplyMailboxTest < ActionMailbox::TestCase
-  # test "receive mail" do
-  #   receive_inbound_email_from_mail \
-  #     to: '"someone" <someone@example.com>',
-  #     from: '"else" <else@example.com>',
-  #     subject: "Hello world!",
-  #     body: "Hello?"
-  # end
+  setup do
+    @user = users(:support)
+    @conversation = conversations(:one)
+  end
+  test "receive mail" do
+    receive_inbound_email_from_mail \
+      to: "conversation-#{@conversation.id}@example.com",
+      from: @user.email,
+      subject: "Hello world!",
+      body: "Hello!"
+
+    assert_equal @conversation.posts.last.body, "Hello!"
+  end
 end
