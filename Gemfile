@@ -75,3 +75,5 @@ group :test do
 end
 
 gem "simple_form", "~> 5.2"
+
+gem "pry", "~> 0.14.2"
