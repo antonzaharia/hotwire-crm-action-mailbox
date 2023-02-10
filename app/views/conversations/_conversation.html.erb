@@ -1,7 +1,7 @@
 <%= turbo_stream_from conversation %>
 
-<div id="posts">
-  <%= render conversation.posts %>
+<div id="posts" class="conversation__posts">
+  <%= render conversation.posts.order(:created_at) %>
 </div>
 
-<%= turbo_frame_tag 'new_post', src: new_contact_conversation_post_path(conversation.contact, conversation, Post.new) %>
+<%= turbo_frame_tag 'new_post', src: new_contact_conversation_post_path(conversation.contact, conversation, Post.new), class: 'chatbox' %>

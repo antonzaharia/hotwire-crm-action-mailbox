@@ -1,4 +1,4 @@
-.conversation {
+.contact {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -8,13 +8,9 @@
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-small);
   margin-bottom: var(--space-m);
-  padding: var(--space-l) var(--space-m);
+  padding: var(--space-xs);
 
   @include media(tabletAndUp) {
     padding: var(--space-xs) var(--space-m);
-  }
-
-  &__posts {
-    padding-bottom: 300px;
   }
 }

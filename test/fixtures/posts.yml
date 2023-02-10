@@ -19,11 +19,11 @@ three:
   message_id: MyString
   author_type: Contact
   author: joe
-  conversation: two
+  conversation: joe_one
 
 four:
   body: Oh, hi!
   message_id: MyString
   author_type: User
   author: support
-  conversation: two
+  conversation: joe_one

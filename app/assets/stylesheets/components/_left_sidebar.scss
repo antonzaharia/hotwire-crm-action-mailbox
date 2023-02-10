@@ -3,7 +3,8 @@
   flex-direction: column;
   padding: var(--space-s);
   border-right: var(--border);
-  min-height: 100vh;
+  min-height: calc(100vh - 100px);
   overflow-y: auto;
   gap: var(--space-xs);
+  min-width: 300px;
 }

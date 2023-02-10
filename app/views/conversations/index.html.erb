@@ -6,7 +6,7 @@
       </div>
     <% end %>
   </div>
-  <div>
-    <%= turbo_frame_tag 'conversation_show' %>
-  </div>
+  <%= turbo_frame_tag "conversation_show" do %>
+    <%= render "conversations/empty_state" %>
+  <% end %>
 </div>
