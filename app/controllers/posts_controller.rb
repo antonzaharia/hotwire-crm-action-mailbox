@@ -9,7 +9,6 @@ class PostsController < ApplicationController
   def create
     @post = @conversation.posts.new(**post_params, message_id: 'test', author: @contact)
 
-    
     if @post.save
       respond_to do |format|
         format.html { redirect_to conversation_path(@conversation) }

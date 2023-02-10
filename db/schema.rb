@@ -70,6 +70,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_09_142437) do
 
   create_table "conversations", force: :cascade do |t|
     t.bigint "contact_id", null: false
+    t.string "subject", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["contact_id"], name: "index_conversations_on_contact_id"

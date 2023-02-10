@@ -1,4 +1,4 @@
 <%= turbo_stream.update 'new_post' do %>
   <%= render partial: 'posts/form', locals: { contact: @conversation.contact, conversation: @conversation, post: Post.new } %>
 <% end %>
-<%= turbo_stream.prepend 'posts', @post %>
+<%# turbo_stream.prepend 'posts', @post %>

@@ -2,6 +2,8 @@
 
 one:
   contact: anton
+  subject: First conversation subject
 
 two:
   contact: joe
+  subject: Second conversation subject

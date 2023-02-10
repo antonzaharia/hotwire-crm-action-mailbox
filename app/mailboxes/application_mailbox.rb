@@ -1,3 +1,4 @@
 class ApplicationMailbox < ActionMailbox::Base
-  # routing /something/i => :somewhere
+  routing ReplyMailbox::MATCHER => :reply
+  routing :all => :conversation
 end
