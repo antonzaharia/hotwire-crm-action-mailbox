@@ -6,7 +6,7 @@
       </div>
     <% end %>
   </div>
-  <%= turbo_frame_tag "conversation_show" do %>
+  <%= turbo_frame_tag "conversation_show", class: 'full-width wide-margins' do %>
     <%= render "conversations/empty_state" %>
   <% end %>
 </div>

@@ -1,6 +1,7 @@
 <%= turbo_stream_from conversation %>
 
 <div id="posts" class="conversation__posts">
+  <%= render "posts/empty_state" %>
   <%= render conversation.posts.order(:created_at) %>
 </div>
 

@@ -1,6 +1,7 @@
 .chatbox {
   position: fixed;
   bottom: 0;
+  left: 300px;
   width: calc(100% - 300px);
 
   font-size: var(--font-size-xl);

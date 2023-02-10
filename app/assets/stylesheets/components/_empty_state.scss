@@ -3,6 +3,7 @@
   border: var(--border);
   border-style: dashed;
   text-align: center;
+  margin: var(--space-m);
 
   &__text {
     font-size: var(--font-size-l);
